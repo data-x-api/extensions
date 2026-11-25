@@ -7,6 +7,31 @@ const METABRAIN_DB_PATH = join(homedir(), ".metabrain.db");
 
 export const OFFICIAL_ENTRIES: RegistryEntry[] = [
   {
+    name: "ripclip",
+    title: "RipClip",
+    description:
+      "Clip long videos (Twitch and Kick streams, VODs, podcasts) into captioned vertical shorts, edit them, plan posts for TikTok, YouTube Shorts and Reels, and track views, from the chat. Finding clips is quoted in Horizon Units and runs only after the user approves; posts are saved as drafts, nothing is published. Hosted Streamable HTTP server with OAuth 2.1 sign-in (dynamic client registration, client ID metadata documents and PKCE); a RipClip account is required (free plan available). Raycast connects directly over HTTP; other clients use the local mcp-remote proxy, which requires Node.js.",
+    icon: "https://raw.githubusercontent.com/RipClipDev/ripclip-plugins/main/plugins/ripclip/assets/icon.png",
+    homepage: "https://ripclip.org/ai-assistants",
+    configuration: {
+      command: "npx",
+      args: ["-y", "mcp-remote", "https://ripclip.org/mcp/"],
+    },
+    remoteUrl: "https://ripclip.org/mcp/",
+  },
+  {
+    name: "funai",
+    title: "FunAI Studio",
+    description:
+      "Generate images, video, audio, music, voice, 3D and text with hundreds of AI models, run one-click tools and templates, and edit and render video projects in the FunAI editor. 30 tools. Runs the funai-mcp stdio bridge (MIT), which relays to the hosted server at https://mcp.funai.art and signs you in to FunAI in your browser (OAuth 2.1 with PKCE; the sign-in lasts 90 days). Before first use, run npx -y funai-mcp login in a terminal, so the browser sign-in is done before Raycast starts the server. Requires a FunAI account and Node.js 18 or later. Generation uses FunAI credits, with a spending limit you choose at sign-in, and results get a shareable link unless you ask for them to be private.",
+    icon: "https://funai.art/icons/icon-512.png",
+    homepage: "https://github.com/fun-aI-studio/funai-mcp/tree/main/npm",
+    configuration: {
+      command: "npx",
+      args: ["-y", "funai-mcp"],
+    },
+  },
+  {
     name: "glasp",
     title: "Glasp",
     description:
