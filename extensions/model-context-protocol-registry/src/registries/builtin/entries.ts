@@ -7,17 +7,17 @@ const METABRAIN_DB_PATH = join(homedir(), ".metabrain.db");
 
 export const OFFICIAL_ENTRIES: RegistryEntry[] = [
   {
-    name: "ripclip",
-    title: "RipClip",
+    name: "dataxapi",
+    title: "DataXAPI",
     description:
-      "Clip long videos (Twitch and Kick streams, VODs, podcasts) into captioned vertical shorts, edit them, plan posts for TikTok, YouTube Shorts and Reels, and track views, from the chat. Finding clips is quoted in Horizon Units and runs only after the user approves; posts are saved as drafts, nothing is published. Hosted Streamable HTTP server with OAuth 2.1 sign-in (dynamic client registration, client ID metadata documents and PKCE); a RipClip account is required (free plan available). Raycast connects directly over HTTP; other clients use the local mcp-remote proxy, which requires Node.js.",
-    icon: "https://raw.githubusercontent.com/RipClipDev/ripclip-plugins/main/plugins/ripclip/assets/icon.png",
-    homepage: "https://ripclip.org/ai-assistants",
+      "Public data from Chinese and global social platforms for your AI agent: posts, comments, accounts, search results and hot lists from Douyin (with its trend index and Xingtu creator data), Xiaohongshu (RedNote, with PGY creator data and keyword index), WeChat Official Accounts (articles, reads, comments), WeChat Channels, WeChat Search, Weibo, Bilibili, Zhihu and Kuaishou, plus TikTok, X, YouTube, Instagram, Reddit and the Meta and Google ad libraries: 21 platforms, 237 endpoints. Five tools: find (an endpoint for a need in plain words, English or Chinese), describe, call, read_more and account. find, describe and the status view work without an account, so an agent can check what exists and what it costs first. Paid per call from a prepaid balance; failed calls are not charged; new accounts get up to 333 free calls with no card. Hosted Streamable HTTP server with OAuth 2.1 sign-in (dynamic client registration and PKCE), or an API key as a Bearer header. Raycast connects directly over HTTP; other clients use the local mcp-remote proxy, which requires Node.js.",
+    icon: "https://dataxapi.com/logo.png",
+    homepage: "https://dataxapi.com/mcp/",
     configuration: {
       command: "npx",
-      args: ["-y", "mcp-remote", "https://ripclip.org/mcp/"],
+      args: ["-y", "mcp-remote", "https://api.dataxapi.com/mcp"],
     },
-    remoteUrl: "https://ripclip.org/mcp/",
+    remoteUrl: "https://api.dataxapi.com/mcp",
   },
   {
     name: "funai",
@@ -384,19 +384,6 @@ export const OFFICIAL_ENTRIES: RegistryEntry[] = [
       args: ["-y", "mcp-remote@0.14.3", "https://octopost.ink/mcp"],
     },
     remoteUrl: "https://octopost.ink/mcp",
-  },
-  {
-    name: "dataxapi",
-    title: "DataXAPI",
-    description:
-      "Public data from Chinese and global social platforms for your AI agent: posts, comments, accounts, search results and hot lists from Douyin (with its trend index and Xingtu creator data), Xiaohongshu (RedNote, with PGY creator data and keyword index), WeChat Official Accounts (articles, reads, comments), WeChat Channels, WeChat Search, Weibo, Bilibili, Zhihu and Kuaishou, plus TikTok, X, YouTube, Instagram, Reddit and the Meta and Google ad libraries: 21 platforms, 237 endpoints. Five tools: find (an endpoint for a need in plain words, English or Chinese), describe, call, read_more and account. find, describe and the status view work without an account, so an agent can check what exists and what it costs first. Paid per call from a prepaid balance; failed calls are not charged; new accounts get up to 333 free calls with no card. Hosted Streamable HTTP server with OAuth 2.1 sign-in (dynamic client registration and PKCE), or an API key as a Bearer header. Raycast connects directly over HTTP; other clients use the local mcp-remote proxy, which requires Node.js.",
-    icon: "https://dataxapi.com/logo.png",
-    homepage: "https://dataxapi.com/mcp/",
-    configuration: {
-      command: "npx",
-      args: ["-y", "mcp-remote", "https://api.dataxapi.com/mcp"],
-    },
-    remoteUrl: "https://api.dataxapi.com/mcp",
   },
   {
     name: "opencart-greece",
