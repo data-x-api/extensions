@@ -205,6 +205,9 @@
 ## [Add uListen MCP Server] - 2026-11-21
 
 - Add uListen to the official registry: search the curated catalog of long-form YouTube podcasts that uListen covers by topic, person, show or quote, read speaker-labeled transcript passages, and get episode summaries, with links to the minute it happened. Hosted Streamable HTTP server at https://mcp.ulisten.ai/ with four read-only tools, no authentication and no API key. Direct HTTP connection in Raycast and an `mcp-remote` fallback for other clients.
+## [Add DataXAPI MCP Server] - {PR_MERGE_DATE}
+
+- Add DataXAPI to the official registry: public posts, comments, accounts, search results and hot lists from Douyin, Xiaohongshu (RedNote), WeChat Official Accounts and Channels, Weibo, Bilibili, Zhihu, Kuaishou, TikTok, X, YouTube, Instagram, Reddit and the Meta and Google ad libraries. Five tools; finding endpoints and their prices works without an account. Hosted Streamable HTTP server at https://api.dataxapi.com/mcp with OAuth 2.1 sign-in (dynamic client registration and PKCE) or an API key, a direct HTTP connection in Raycast and an `mcp-remote` fallback for other clients. Paid per call; failed calls are not charged.
 
 ## [Add OpenCart Greece MCP Server] - 2026-11-20
 
